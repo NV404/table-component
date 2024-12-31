@@ -1,0 +1,34 @@
+.table-c {
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.resize-handle {
+  width: 5px;
+  cursor: col-resize;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+th {
+  position: relative;
+}
+
+.resize-handle:hover {
+  background-color: #ccc;
+}
+
+.resize-handle {
+  height: 100vh;
+  top: 0;
+  transform: translateX(50%);
+  pointer-events: auto;
+}
